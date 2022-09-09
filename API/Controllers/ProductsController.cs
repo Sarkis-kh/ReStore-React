@@ -21,7 +21,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Products>>> GetPoducts()
+        public async Task<ActionResult<List<Products>>> GetProducts()
         {
             return await _context.Products.ToListAsync();
         }
